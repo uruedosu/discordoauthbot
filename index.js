@@ -148,4 +148,4 @@ client.login(epic.token).catch(() => {
   throw new Error(`TOKEN OR INTENT INVALID`);
 });
 
-app.listen(epic.port, () => console.log('https://discord.gg/oauth2 -> Made By gpa#0001 , forgetful#0001 , 1vx#0001'));
+app.listen(epic.port, () => console.log('made by uruedosu with love'));
