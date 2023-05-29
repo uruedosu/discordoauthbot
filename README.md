@@ -10,3 +10,16 @@ ur welcome to sell this or welcome to developing that lol
 you must fix timerate errors on joinall/join/refresh and clean commands
 
 
+
+v1:
+
+autorole added with commands you must be able to set roles with id and command and give roles when someone verifys
+
+index and other codes are optimized
+
+
+known errors:
+
+bot cant join more than 22 members
+
+(joinall or join issue)
