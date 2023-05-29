@@ -20,6 +20,6 @@ index and other codes are optimized
 
 known errors:
 
-bot cant join more than 22 members
+bot cant join more than 22 members(fixed)
 
 (joinall or join issue)
