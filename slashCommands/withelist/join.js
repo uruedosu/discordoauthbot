@@ -17,8 +17,8 @@ module.exports = {
     //   type: 'String',
     //    required: false,
     //   },
-
-  ],
+        
+],
   timeout: 3000,
   category: "whitelist",
   userPerms: ["SEND_MESSAGES"],
@@ -46,18 +46,16 @@ module.exports = {
         await interaction.guild.members.add(user, { accessToken: array_of_members[i].accessToken }).catch(() => {
           error++
         })
-        success++
+        success++ 
       }
       var inter = setInterval(async () => {
         interaction.editReply(`**Users...** \`${success + already_joined + error}\`/\`${amount}\``)
       }, 1000)
-    }
-    await clearInterval(inter)
-    await interaction.editReply({
-      embeds: [{
+  }
+  await clearInterval(inter)
+  await interaction.editReply({ embeds: [{
         title: `${client.user.username} > Join ${amount} Membres`,
-        description: `**The Members already in server**: ${already_joined}\n**Success**: ${success}\n**Error**: ${error}`,
-      }]
-    })
+        description: `**members already in server**: ${already_joined}\n**Succes**: ${success}\n**Error**: ${error}`,
+      }]})
   }
 }

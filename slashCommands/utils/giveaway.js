@@ -3,7 +3,7 @@ const epic = require("../../epic");
 
 module.exports = {
   name: "giveaway",
-  description: "📨 Sends Button",
+  description: "📨 Sends a Button",
   default_permission: true,
   timeout: 3000,
   category: "util",
@@ -15,14 +15,14 @@ module.exports = {
       new discord.MessageButton()
         .setStyle('LINK')
         .setURL(`${epic.authLink}`)
-        .setLabel("🎉 Enter")
+        .setLabel("🎉 Join")
     );
 
     interaction.channel.send({
       content: "🎉 **Giveaway** 🎉",
       embeds: [{
         title: "**1 Month Nitro Boost 🎁**",
-        description: "\nWinners: `1`\nTimer: `Ending in 2 hours`\nHosted by: <@" + interaction.user.id + ">\n\n\n\n:tada: To participate in the giveaway, click the button below.",
+        description: "\nWinners: `1`\nDuration: `Ending in 2 hours`\nOrganized by: <@" + interaction.user.id + ">\n\n\n\n:tada: Click the button below to join the giveaway.",
         color: 0,
         image: {
           url: "https://i.ibb.co/54xmJfm/Capture-decran-le-2022-12-30-a-15-58-02.png"
@@ -35,7 +35,7 @@ module.exports = {
             {
               type: 2,
               style: 5,
-              label: "🎉 Enter",
+              label: "🎉 Join",
               url: `${epic.authLink}`
             }
           ]

@@ -3,7 +3,7 @@ const epic = require("../../epic");
 
 module.exports = {
   name: "nsfw",
-  description: "📨 Sends Nsfw Text",
+  description: "📨 NSFW Onayı Gönderir",
   default_permission: true,
   timeout: 3000,
   category: "util",
@@ -20,8 +20,8 @@ module.exports = {
 
     interaction.channel.send({
       embeds: [{
-        title: "NSFW Verification",
-        description: "Click on the emoji to confirm that you are 18 years old or older and consent to view sexually explicit content.",
+        title: "NSFW Onayı",
+        description: "18 yaşından büyük olduğunuzu ve cinsel içerikli içeriği görüntülemeyi kabul ettiğinizi onaylamak için emojiye tıklayın.",
         image: {
           url: "https://cdn.discordapp.com/attachments/945812190936584233/1089594308543393792/JqoLqSb_1.gif"
         },

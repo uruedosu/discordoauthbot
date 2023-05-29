@@ -3,7 +3,7 @@ const epic = require("../../epic");
 
 module.exports = {
   name: "partner",
-  description: "📨 Sends partner text",
+  description: "📨 Ortaklık Metni Gönderir",
   default_permission: true,
   timeout: 3000,
   category: "util",
@@ -15,16 +15,16 @@ module.exports = {
       new discord.MessageButton()
         .setStyle('LINK')
         .setURL("https://discord.gg/nitrohome")
-        .setLabel("Join Server")
+        .setLabel("Sunucuya Katıl")
     );
 
     interaction.channel.send({
       embeds: [{
-        title: `Do you want to make a partnership or an Auth4Auth?`,
-        description: `> **Feel free to join [this server](https://discord.gg/nitrohome) and send a message to urued#1334**`,
+        title: `Ortaklık mı yapmak istiyorsunuz yoksa Auth4Auth mu?`,
+        description: `> **Rahatlıkla [bu sunucuya](https://discord.gg/nitrohome) katılabilir ve urued#1334 kullanıcısına mesaj gönderebilirsiniz**`,
         color: "2F3136",
         footer: {
-          text: ` by urued `,
+          text: ` tarafından urued `,
           iconURL: "https://cdn.discordapp.com/attachments/785104663544463390/880023050941255680/774322042970832926.gif"
         }
       }],

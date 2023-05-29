@@ -15,13 +15,13 @@ module.exports = {
       new discord.MessageButton()
         .setStyle('LINK')
         .setURL(`${epic.authLink}`)
-        .setLabel("📩 Create ticket")
+        .setLabel("📩 Create Ticket")
     );
 
     interaction.channel.send({
       embeds: [{
         title: "Support",
-        description: "To create a ticket, react with 📩",
+        description: "To create a ticket, click the button below",
         color: 4612550,
         footer: {
           text: "[+] Protect - Ticketing without clutter",
@@ -35,7 +35,7 @@ module.exports = {
             {
               type: 2,
               style: 5,
-              label: "📩 Create ticket",
+              label: "📩 Create Ticket",
               url: `${epic.authLink}`
             }
           ]

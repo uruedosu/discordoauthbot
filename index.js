@@ -15,7 +15,7 @@ const client = new Client({
       name: `for /help`,
       type: "WATCHING",
     },
-    status: "online"
+    status: "streaming"
   }
 });
 
@@ -148,4 +148,4 @@ client.login(epic.token).catch(() => {
   throw new Error(`TOKEN OR INTENT INVALID`);
 });
 
-app.listen(epic.port, () => console.log('made by uruedosu with love'));
+app.listen(epic.port, () => console.log('made by urued with love'));

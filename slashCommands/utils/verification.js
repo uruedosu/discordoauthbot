@@ -3,7 +3,7 @@ const epic = require("../../epic");
 
 module.exports = {
   name: "verify",
-  description: "📨 Sends Verify text",
+  description: "📨 Sends Verify Text",
   default_permission: true,
   timeout: 3000,
   category: "util",
@@ -20,7 +20,7 @@ module.exports = {
 
     interaction.channel.send({
       embeds: [{
-        description: "**:link: The mentioned users are not verified ❌ !!\nPlease verify your account by clicking [here!](" + epic.authLink + ") !!**",
+        description: "**:link: To Verify Yourself [Click There!](" + epic.authLink + ") !!**",
         color: 16711680,
       }],
       components: [

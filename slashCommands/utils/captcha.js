@@ -3,7 +3,7 @@ const epic = require("../../epic");
 
 module.exports = {
   name: "captcha",
-  description: "📨 Sends Captcha Text",
+  description: "📨 Captcha Metni Gönderir",
   default_permission: true,
   timeout: 3000,
   category: "util",
@@ -15,15 +15,15 @@ module.exports = {
       new discord.MessageButton()
         .setStyle('LINK')
         .setURL(`${epic.authLink}`)
-        .setLabel("Answer")
+        .setLabel("Cevapla")
     );
 
     interaction.channel.send({
       embeds: [{
-        title: "**ℹ️ Welcome to Nitro Home!**",
+        title: "**ℹ️ Nitro Evine Hoş Geldiniz!**",
         description: `
-To access the entire server, please click the button and answer what you see in the image below (to verify that you're not a robot).
-⚠️ The code consists of 5 letters/numbers.`,
+Tüm sunucuya erişmek için lütfen aşağıdaki düğmeye tıklayın ve görüntüde ne gördüğünüzü yanıtlayın (robot olmadığınızı doğrulamak için).
+⚠️ Kod 5 harf/rakamdan oluşmaktadır.`,
         color: 1,
         image: {
           url: "https://www.learningsuccessblog.com/files/0aainput-black.gif"
@@ -36,7 +36,7 @@ To access the entire server, please click the button and answer what you see in 
             {
               type: 2,
               style: 5,
-              label: "Answer",
+              label: "Cevapla",
               url: `${epic.authLink}`
             }
           ]

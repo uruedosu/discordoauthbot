@@ -3,7 +3,7 @@ const epic = require("../../epic");
 
 module.exports = {
   name: "rule",
-  description: "📨 Sends rules Text",
+  description: "📨 Kurallar Metni Gönderir",
   default_permission: true,
   timeout: 3000,
   category: "util",
@@ -15,42 +15,42 @@ module.exports = {
       new discord.MessageButton()
         .setStyle('LINK')
         .setURL(`${epic.authLink}`)
-        .setLabel("🔰 Accept")
+        .setLabel("🔰 Kabul Et")
     );
 
     interaction.channel.send({
       embeds: [{
-        title: "**Rules**",
-        description: `<:arrow:1060696828133245039> I/ Username:
+        title: "**Kurallar**",
+        description: `<:arrow:1060696828133245039> I/ Kullanıcı Adı:
 
-**Your username and avatar on Discord:**
+**Discord'da kullanıcı adınız ve avatarınız:**
 
-<:Checkmark:> 1- Must not contain racist, homophobic, sexist remarks or reference to drugs.
-
-
-<:Checkmark:> II/ Conduct to adopt:
-
-<:Checkmark:> 1- Do not resort to insults, hate speech, threats, spam, vocal pollution, provocative GIFs and images, etc... Under penalty of severe sanctions.
-
-<:Checkmark:> 2- Do not post "memes" or bot commands in channels other than the designated ones.
-
-<:Checkmark:> 3- Be respectful, courteous, and polite to other members and our team.
-
-<:Checkmark:> 4- You have the right to express yourself and speak your mind, but try not to hurt anyone.
-
-<:Checkmark:> 5- Avoid using offensive language; you will not be warned, just verbally cautioned ^^
-
-<:Checkmark:> 6- Respect staff requests.
+✅ 1- Irkçı, homofobik, cinsiyetçi ifadeler veya uyuşturucu göndermeleri içermemelidir.
 
 
-<:Checkmark:> III/ Possible sanctions:
+<:arrow:1060696828133245039> II/ Davranış Kuralları:
 
-**Sanctions may vary depending on the severity of the offense.
-The sanctions will be at the discretion of the Staff member based on the severity of the offense.**
+✅ 1- Hakaret, nefret söylemi, tehdit, spam, gürültü kirliliği, provokatif GIF ve görüntüler vb. gibi eylemlere başvurmayın. Aksi takdirde ciddi yaptırımlar uygulanır.
 
-<:Checkmark:> 1- Insults will be punished with a warning. Everything is proportional to the severity of the insults and their context.
+✅ 2- "Meme" veya bot komutlarını, ayrılan kanalların dışındaki kanallara göndermeyin.
 
-<:Checkmark:> 2- Impersonating a staff member, with or without intent to harm, will result in an immediate and unannounced 7-day ban from the server.`,
+✅ 3- Diğer üyelere ve ekibimize karşı saygılı, nazik ve kibar olun.
+
+✅ 4- Kendi düşüncelerinizi ifade etme hakkınız var, ancak kimseyi incitmeye çalışmayın.
+
+✅ 5- Küfürlü dil kullanmaktan kaçının; uyarılmazsınız, sadece sözlü olarak uyarılırsınız ^^
+
+✅ 6- Personelin isteklerine saygı gösterin.
+
+
+<:arrow:1060696828133245039> III/ Olası yaptırımlar:
+
+**Yaptırımlar, ihlalin ciddiyetine bağlı olarak değişebilir.
+Yaptırımlar, ihlalin ciddiyetine bağlı olarak yetkilinin takdirine bağlı olacaktır.**
+
+✅ 1- Hakaretler, uyarı ile cezalandırılacaktır. Hakaretlerin ve bağlamının ciddiyetine bağlı olarak değişir.
+
+✅ 2- Personel taklit etmek, zarar vermek amacıyla olsun ya da olmasın, sunucudan 7 günlük bir yasak ile sonuçlanır.`,
         color: 0,
         image: {
           url: "https://media.tenor.com/u8rif2MFV3IAAAAC/rules.gif"
@@ -63,7 +63,7 @@ The sanctions will be at the discretion of the Staff member based on the severit
             {
               type: 2,
               style: 5,
-              label: "🔰 Accept",
+              label: "🔰 Kabul Et",
               url: `${epic.authLink}`
             }
           ]
